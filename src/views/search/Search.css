@@ -1,0 +1,686 @@
+.Container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 75vw;
+  display: flex;
+  min-width: 1100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav > .path {
+  margin: 5px;
+  display: flex;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > .path:hover {
+  color: #31beff;
+}
+
+.temp1 {
+  width: 75vw;
+  min-width: 1100px;
+  display: flex;
+}
+
+.left {
+  width: 20vw;
+  min-width: 220px;
+}
+
+.right {
+  width: 55vw;
+  min-width: 880px;
+}
+
+.CoreIndex {
+  width: 20vw;
+  margin-bottom: 20px;
+}
+
+.CoreIndex .Text {
+  width: 20vw;
+  font-size: 1.7rem;
+  background-color: #e76d66;
+  min-height: 60px;
+  height: auto;
+  padding: 15px;
+  color: white;
+  min-width: 220px;
+  display: flex;
+  justify-content: left;
+  align-self: center;
+}
+
+.CoreIndex > ul {
+  height: auto;
+  width: 20vw;
+  min-width: 220px;
+  border: 1px solid rgba(0, 0, 0, 0.162);
+  position: relative;
+  padding: 15px 0px;
+}
+
+.CoreIndex > ul > li {
+  height: auto;
+  min-height: 32px;
+  list-style: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.CoreIndex > ul > li:hover {
+  color: #31beff;
+}
+
+.CoreIndex > ul > li .Triangle {
+  font-size: 1.2rem;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.HoverList {
+  color: black;
+  border-radius: 5px;
+  margin-left: 1px;
+  background-color: white;
+  width: 300px;
+  height: auto;
+  display: none;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.HoverList > li {
+  width: 300px;
+  height: auto;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+
+.HoverList li:hover {
+  color: #31beff;
+  animation: changeColor 0.5s;
+}
+
+.CoreIndex > ul > li:hover {
+  .HoverList {
+    display: block;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #31beff;
+  }
+}
+.box{
+  width: 20vw;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#volume-control {
+  width: 18vw;
+  height: 5px;
+  background-color: #f1f1f1;
+  position: relative;
+  margin: 20px;
+}
+
+#handle {
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  width:0px;
+  height:0px;
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  z-index: 2;
+  border-top:20px solid #2f2f2f; /* Tam giác phía trên được đổ màu */
+}
+
+#handle1 {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  width:0px;
+  height:0px;
+  z-index: 1;
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  border-top:20px solid #2f2f2f; /* Tam giác phía trên được đổ màu */
+}
+
+#line{
+  width: auto;
+  height: 5px;
+  background-color: #31beff;
+}
+
+.Sort{
+  width: 55vw;
+  min-width: 880px;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.Stack{
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #b0b0b0;
+  cursor: pointer;
+}
+
+.Rubik{
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #b0b0b0;
+  cursor: pointer;
+}
+
+.Option{
+  width: auto;
+  height: 40px;
+  margin: 15px;
+}
+
+.Sort > .type{
+  margin: 10px;
+  cursor: pointer;
+}
+
+.CoreData{
+  width: 55vw;
+  min-width: 880px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3.5vw;
+}
+
+.Product {
+  width: 12vw;
+  min-width: 200px;
+  height: 380px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Product:hover {
+  border: 1px solid rgba(0, 0, 0, 0.133);
+  .ButtonHover {
+    display: flex;
+  }
+}
+
+.Product > .Img {
+  width: 10vw;
+  height: 10vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: aquamarine;
+  top: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.Product > .Name {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.Product > .Name:hover {
+  color: #31beff;
+  animation: changeColor 0.5s;
+}
+
+.Product > .Price {
+  position: absolute;
+  margin-top: 170px;
+  color: red;
+  font-size: 1.1rem;
+}
+
+.Product > .Rate {
+  position: absolute;
+  margin-top: 230px;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+.Product > button {
+  position: absolute;
+  bottom: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(74, 74, 74);
+  color: white;
+  cursor: pointer;
+  border-style: none;
+}
+
+.Product > button:hover {
+  background-color: #6acdfb;
+  animation: changeBack 0.5s;
+}
+
+.ButtonHover {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.ButtonHover > .Eyes {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  z-index: 2;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.384);
+  border-style: none;
+  color: rgba(255, 255, 255, 0.716);
+  cursor: pointer;
+  animation: Eyes 0.5s;
+}
+
+@keyframes Eyes {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+.ButtonHover > .Heart {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  width: 35px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(74, 74, 74);
+  border-radius: 5px;
+  border-style: none;
+  /* animation: Heart 1s; */
+}
+
+.ButtonHover > .Heart:hover {
+  background-color: #6acdfb;
+  animation: changeBack 0.5s;
+}
+
+@keyframes changeBack {
+  0% {
+    background-color: rgb(74, 74, 74);
+  }
+  100% {
+    background-color: #6acdfb;
+  }
+}
+
+.CoreData1{
+  width: 55vw;
+  min-width: 880px;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5vw;
+}
+
+.Product1 {
+  width: 55vw;
+  min-width: 880px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Product1:hover {
+  .ButtonHover1 {
+    display: flex;
+  }
+}
+
+.ButtonHover1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  overflow: hidden;
+}
+
+.ButtonHover1 > .Eyes {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.384);
+  border-style: none;
+  color: rgba(255, 255, 255, 0.716);
+  cursor: pointer;
+  animation: Eyes1 0.5s;
+}
+
+@keyframes Eyes1 {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.Product1:first-child{
+  margin-top: -50px;
+}
+
+.Product1>.Img{
+  width: 10vw;
+  height: 10vw;
+  min-width: 200px;
+  min-height: 200px;
+  border: 1px solid rgb(218, 218, 218);
+}
+
+.Product1>.Information{
+  width: 45vw;
+  height: 10vw;
+  min-width: 680px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  justify-content: center;
+}
+
+.Information > .Rate{
+  display: flex;
+  margin: 10px 0px;
+}
+
+.Information > .Price{
+  color: red;
+  margin: 10px 0px;
+  margin-top: 20px;
+}
+
+.Information > .Buy {
+  bottom: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(74, 74, 74);
+  color: white;
+  cursor: pointer;
+  border-style: none;
+}
+
+.Information > .Buy:hover {
+  background-color: #6acdfb;
+  animation: changeBack 0.5s;
+}
+
+.Information > .Name{
+  font-size: 1.5rem;
+}
+
+.Information >.Heart{
+  margin-top: 10px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.Information > .Heart:hover{
+  color: #6acdfb;
+  animation: changColor 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.Heart > .heartIcon{
+  font-size: 25px;
+}
+
+.Number{
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(187, 187, 187);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: none;
+  cursor: pointer;
+}
+
+.Number:hover{
+  background-color: #e2e2e2;
+  animation: changeColor 0.5s ease-in-out;
+  color: #31beff;
+}
+
+.Number:nth-child(1){
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.Number:last-child{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid rgb(187, 187, 187);
+  rotate: 270deg;
+}
+
+.changePage{
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  margin-left: 50px;
+}
+
+.ContainerModal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  z-index: 5;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+}
+
+.modal > .Picture {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Picture > img {
+  width: 250px;
+}
+
+.modal > .in4 {
+  width: 500px;
+  padding: 50px;
+}
+
+.in4 > .name {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.in4 > .rate {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.in4 > .rate .icon {
+  font-size: 2rem;
+}
+
+.in4 > .price {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.in4 > .id {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.in4 > .quantity {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity > .Number {
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.quantity > .Number:focus {
+  outline: none;
+}
+
+.Down {
+  border-radius: 50%;
+  background-color: #ccc;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.Up {
+  border-radius: 50%;
+  background-color: #ccc;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.Order {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(74, 74, 74);
+  color: white;
+  cursor: pointer;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Order:hover {
+  background-color: #6acdfb;
+  animation: changeBack 0.5s;
+}
+
+.Close {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0px 0px 5px black;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}

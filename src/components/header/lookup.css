@@ -1,0 +1,62 @@
+.container {
+    padding: 0 18px;
+}
+.row {
+    margin-left: -9px;
+    margin-right: -9px;
+}
+.orderView {
+    margin: 60px 0;
+}
+.orderView > h3 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #cd3831;
+    font-size: 25px;
+    line-height:32px;
+}
+.form-inline {
+    display: block;
+    text-align: center;
+}
+#frmIndexOrder .txtFill {
+    width: 50%;
+}
+
+.form-inline > .form-groups {
+    display: inline-block;
+    margin: 0px;
+}
+#frmIndexOrder .form-groups input {
+    border: 1px solid #dedede;
+    padding: 10px;
+    width: 100%;
+}
+.form-inline > .form-groups {
+    display: inline-block;
+    margin: 0px;
+}
+#frmIndexOrder .btn-danger {
+    border: none;
+    background: #cd3831;
+    color: #fff;
+    padding: 11px 20px;
+    margin-left: -2px;
+}
+.desOrderSearch {
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+.fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe {
+    max-width: 100%;
+}
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
