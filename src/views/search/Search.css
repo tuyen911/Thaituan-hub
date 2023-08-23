@@ -133,7 +133,7 @@
     color: #31beff;
   }
 }
-.box{
+.box {
   width: 20vw;
   height: 100px;
   display: flex;
@@ -154,33 +154,33 @@
   position: absolute;
   top: -20px;
   left: -15px;
-  width:0px;
-  height:0px;
-  border-left:15px solid transparent;
-  border-right:15px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
   z-index: 2;
-  border-top:20px solid #2f2f2f; /* Tam giác phía trên được đổ màu */
+  border-top: 20px solid #2f2f2f; /* Tam giác phía trên được đổ màu */
 }
 
 #handle1 {
   position: absolute;
   top: -20px;
   right: -15px;
-  width:0px;
-  height:0px;
+  width: 0px;
+  height: 0px;
   z-index: 1;
-  border-left:15px solid transparent;
-  border-right:15px solid transparent;
-  border-top:20px solid #2f2f2f; /* Tam giác phía trên được đổ màu */
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #2f2f2f; /* Tam giác phía trên được đổ màu */
 }
 
-#line{
+#line {
   width: auto;
   height: 5px;
   background-color: #31beff;
 }
 
-.Sort{
+.Sort {
   width: 55vw;
   min-width: 880px;
   display: flex;
@@ -190,7 +190,7 @@
   font-size: 18px;
 }
 
-.Stack{
+.Stack {
   margin: 15px;
   width: 40px;
   height: 40px;
@@ -200,7 +200,7 @@
   cursor: pointer;
 }
 
-.Rubik{
+.Rubik {
   margin-right: 15px;
   width: 40px;
   height: 40px;
@@ -210,18 +210,18 @@
   cursor: pointer;
 }
 
-.Option{
+.Option {
   width: auto;
   height: 40px;
   margin: 15px;
 }
 
-.Sort > .type{
+.Sort > .type {
   margin: 10px;
   cursor: pointer;
 }
 
-.CoreData{
+.CoreData {
   width: 55vw;
   min-width: 880px;
   display: flex;
@@ -373,7 +373,7 @@
   }
 }
 
-.CoreData1{
+.CoreData1 {
   width: 55vw;
   min-width: 880px;
   display: flex;
@@ -435,11 +435,11 @@
   }
 }
 
-.Product1:first-child{
+.Product1:first-child {
   margin-top: -50px;
 }
 
-.Product1>.Img{
+.Product1 > .Img {
   width: 10vw;
   height: 10vw;
   min-width: 200px;
@@ -447,7 +447,7 @@
   border: 1px solid rgb(218, 218, 218);
 }
 
-.Product1>.Information{
+.Product1 > .Information {
   width: 45vw;
   height: 10vw;
   min-width: 680px;
@@ -458,12 +458,12 @@
   justify-content: center;
 }
 
-.Information > .Rate{
+.Information > .Rate {
   display: flex;
   margin: 10px 0px;
 }
 
-.Information > .Price{
+.Information > .Price {
   color: red;
   margin: 10px 0px;
   margin-top: 20px;
@@ -484,11 +484,11 @@
   animation: changeBack 0.5s;
 }
 
-.Information > .Name{
+.Information > .Name {
   font-size: 1.5rem;
 }
 
-.Information >.Heart{
+.Information > .Heart {
   margin-top: 10px;
   height: auto;
   display: flex;
@@ -496,17 +496,17 @@
   font-size: 14px;
 }
 
-.Information > .Heart:hover{
+.Information > .Heart:hover {
   color: #6acdfb;
   animation: changColor 0.5s ease-in-out;
   cursor: pointer;
 }
 
-.Heart > .heartIcon{
+.Heart > .heartIcon {
   font-size: 25px;
 }
 
-.Number{
+.Number {
   width: 40px;
   height: 40px;
   border: 1px solid rgb(187, 187, 187);
@@ -517,25 +517,25 @@
   cursor: pointer;
 }
 
-.Number:hover{
+.Number:hover {
   background-color: #e2e2e2;
   animation: changeColor 0.5s ease-in-out;
   color: #31beff;
 }
 
-.Number:nth-child(1){
+.Number:nth-child(1) {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.Number:last-child{
+.Number:last-child {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 1px solid rgb(187, 187, 187);
   rotate: 270deg;
 }
 
-.changePage{
+.changePage {
   width: fit-content;
   height: 40px;
   display: flex;

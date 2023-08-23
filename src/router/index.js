@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Cart from '../views/CartView.vue'
 import Search from '../views/SearchView.vue'
+import Product from '../views/ProductView.vue'
 
 // newspage
 import  Domesticnews from '../components/Newspage/Domesticnews.vue'
@@ -36,6 +37,11 @@ const router = createRouter({
       path: '/:name',
       name: 'search',
       component: Search
+    },
+    {
+      path: '/:product',
+      name: 'product',
+      component: Product
     },
     {
       path: '/domesticnews',

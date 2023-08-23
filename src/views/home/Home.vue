@@ -113,8 +113,13 @@
               <Heart></Heart>
             </button>
           </div>
-          <img :src="`${part1.url}`" alt="error" class="Img" />
-          <div class="Name">
+          <img
+            :src="`${part1.url}`"
+            alt="error"
+            class="Img"
+            @click="Detail(part.name, part.category[0].name, part1.name)"
+          />
+          <div class="Name" @click="Detail(part.name, part.category[0].name, part1.name)">
             {{ part1.name }}
           </div>
           <div class="Price">{{ part1.price }} VNĐ</div>
@@ -177,6 +182,33 @@ export default {
     }
   },
   methods: {
+    Detail(object1, object2, name) {
+      let a = name
+      a = convertViToEn(a)
+      console.log(object1)
+      console.log(object2)
+      sessionStorage.setItem(
+        'search',
+        '[{' +
+          String.fromCharCode(34) +
+          'name' +
+          String.fromCharCode(34) +
+          ':' +
+          String.fromCharCode(34) +
+          object1 +
+          String.fromCharCode(34) +
+          '},{' +
+          String.fromCharCode(34) +
+          'name' +
+          String.fromCharCode(34) +
+          ':' +
+          String.fromCharCode(34) +
+          object2 +
+          String.fromCharCode(34) +
+          '}]'
+      )
+      this.$router.push({ name: 'product', params: { product: a } })
+    },
     Search(object1, object2) {
       let a = object2
       a = convertViToEn(a)
@@ -216,7 +248,7 @@ export default {
             '}]'
         )
       }
-      this.$router.push((this.$router.params = a))
+      this.$router.push({ name: 'search', params: { name: a } })
     },
     Down() {
       if (this.quantity !== 1) {
