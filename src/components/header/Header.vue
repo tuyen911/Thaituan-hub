@@ -16,15 +16,15 @@
           <Point class="Point"></Point>
           Theo dõi đơn hàng
           <Triangle class="Triangle"></Triangle>
-          <div class="HoverFollow">
-            <input type="text" placeholder="Vui lòng nhập mã đơn hàng" />
-            <input type="text" placeholder="Vui lòng nhập email đặt hàng" />
-            <div class="Text">
-              Nếu bạn có thắc mắc ?
-              <a>Bấm vào đây</a>
+            <div class="HoverFollow">
+              <input type="text" v-model="code" placeholder="Vui lòng nhập mã đơn hàng" />
+              <input type="text" v-model="email" placeholder="Vui lòng nhập email đặt hàng" />
+              <div class="Text">
+                Nếu bạn có thắc mắc ?
+                <a>Bấm vào đây</a>
+              </div>
+              <button @click="send()">THEO DÕI</button>
             </div>
-            <button>THEO DÕI</button>
-          </div>
         </div>
         <div class="Guarantee"><router-link to="/lookup">Tra cứu bảo hành</router-link></div>
       </div>
@@ -125,9 +125,24 @@ export default {
   data() {
     return {
       Nav: 1,
-      Number: 0
+      Number: 0,
+      code: '',
+      email:''
     }
   },
+  methods: {
+    send() {
+      // Code = this.code;
+      // Email = this.email;
+      sessionStorage.setItem("code",this.code)
+      sessionStorage.setItem("email",this.email)
+      this.$router.push({ path: '/order/checkorder/:information', name: 'CheckOrder', params: { code: this.code, email: this.email } })
+      if (window.location.pathname != "/") {
+        location.reload();
+      }
+    }
+  }
+  ,
   mounted() {
     if (localStorage.cart) {
       let Object = JSON.parse('[' + localStorage.cart + ']')

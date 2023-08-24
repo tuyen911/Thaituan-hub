@@ -19,6 +19,7 @@ import Bankpolicy from '../components/Contact/Bankpolicy.vue'
 
 import Lookup from '../components/header/Lookup.vue'
 import Abate from '../components/Abate/Abate.vue'
+import CheckOrder from '../views/CheckOrderView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -99,6 +100,11 @@ const router = createRouter({
       name: 'Abate',
       component: Abate
     },
+    {
+      path:'/order/checkoder/:code:email',
+      name: 'CheckOrder',
+      component: CheckOrder
+    }
   ]
 })
 

@@ -1,0 +1,19 @@
+{
+    "data":{
+        "bill":[
+            {
+                "code":"1",
+                "sanpham":[
+                    {
+                        "name":"Máy Bay Geprc Cinego HD 4s - Rx"
+                    },
+                    {
+                        "name":"Khung Máy Bay Iflight IH3 Dành Cho O3"
+                    }
+                ],
+                "information": "xin cái địa chỉ",
+                "status": "1"
+            }
+        ]
+    }
+}

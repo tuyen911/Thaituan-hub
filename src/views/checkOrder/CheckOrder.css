@@ -1,0 +1,67 @@
+.Container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noneData > .title{
+    font-size: 32px;
+}
+
+.noneData > h2{
+    font-size: 24px;
+}
+
+.noneData>ul>li{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.noneData>img{
+    width: 50vw;
+    min-width: 500px;
+}
+
+.noneData>.Text{
+    color: rgb(35, 132, 177);
+    font-size: 40px;
+}
+
+.follow{
+    display: flex;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 20px 0px;
+}
+
+.input > input{
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid rgb(133, 133, 133);
+    padding: 10px;
+}
+
+.buttonAlign{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.button{
+    width: 80px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
