@@ -1,0 +1,152 @@
+.Container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.path{
+    display: flex;
+    width: 75vw;
+    padding: 10px;
+    min-width: 1100px;
+}
+
+.path>.link{
+    font-weight: 300;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.path>.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+}
+
+@keyframes changeColor {
+    0%{
+        color: black;
+    }
+    100%{
+        color: #31beff;
+    }
+}
+
+.Information{
+    width: 75vw;
+    height: auto;
+    min-width: 1100px;
+    display: flex;
+}
+
+.firstData{
+    width: 30vw;
+    padding: 0px 25px;
+    min-width: 440px;
+}
+
+.firstData> h1{
+    font-size: 2rem;
+    padding: 10px 0px;
+    font-weight: 400;
+}
+
+.firstData>h2{
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    font-weight: 400;
+}
+
+.content{
+    font-weight: 300;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.firstData > .button{
+    width:100px;
+    height: 45px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstData>.button:hover{
+    background-color: #31beff;
+    animation: changeBack 0.5s ease;
+}
+
+.secondData{
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 176px;
+    justify-content: center;
+}
+
+.secondData>h1{
+    font-weight: 400;
+}
+
+.secondData>input{
+    margin: 8px 0px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(152, 152, 152);
+}
+
+.secondData>button{
+    height: 40px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-style: none;
+    margin: 10px 0px;
+}
+
+.secondData>button:hover{
+    background-color: #31beff;
+    animation: changeBack 0.5s ease;
+}
+
+@keyframes changeBack {
+    0%{
+        background-color: rgb(87, 87, 87);
+    }
+    100%{
+        background-color: #31beff;
+    }
+}
+
+.link{
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.link:visited{
+    color: black;
+}
+
+.secondData>.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+
+}
+
+.path>.link:last-child{
+    color: #31beff;
+}

@@ -1,0 +1,74 @@
+.all{
+    width: 20vw;
+    height: 180px;
+    border: 1px solid rgb(186, 186, 186);
+    min-width: 220px;
+}
+
+.Title{
+    width: auto;
+    height: auto;
+    background-color: #e76d66;
+    padding: 10px;
+    color: white;
+    font-size: 2rem;
+}
+
+.link{
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.link:visited{
+    color: black;
+}
+
+.second{
+    display: flex;
+    font-size: 1.3rem;
+    width: auto;
+    padding: 15px;
+}
+
+.second >.link {
+    font-size: 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.second >.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+}
+
+.second > .link:last-child {
+    margin-left: 10px;
+}
+
+.third{
+    display: flex;
+    width: auto;
+    padding: 15px;  
+}
+
+.third > .link{
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.third >.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+}
+
+@keyframes changeColor {
+    0%{
+        color: black;
+    }
+    100%{
+        color: #31beff;
+    }
+}

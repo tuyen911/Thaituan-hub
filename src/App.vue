@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+input:focus{
+  outline: none;
+}
+
 li {
   list-style: none;
 }

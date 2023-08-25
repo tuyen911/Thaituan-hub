@@ -7,6 +7,21 @@
   align-items: center;
 }
 
+.link{
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:visited{
+  color: black;
+}
+
+.link:hover{
+  color: #31beff;
+  animation: changeColor 0.5s ease;
+}
+
 .Head {
   width: 75vw;
   height: 80px;
