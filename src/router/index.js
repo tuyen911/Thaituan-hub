@@ -16,11 +16,13 @@ import Contactstore from '../components/Contact/Contactstore.vue'
 import Accountbank from '../components/Contact/Accountbank.vue'
 import Buyingguide from '../components/Contact/Buyingguide.vue'
 import Bankpolicy from '../components/Contact/Bankpolicy.vue'
-
+import ProfileView from '../views/ProfileView.vue'
 import Lookup from '../components/header/Lookup.vue'
 import Abate from '../components/Abate/Abate.vue'
 import CheckOrder from '../views/CheckOrderView.vue'
-
+import ProfileChangepasswordView from '../views/ProfileChangepasswordView.vue'
+import ProfileEditView from '../views/ProfileEdit.vue'
+import FavouriteView from '../views/FavouriteView.vue'
 //sign in, sign up, forgot pass
 import SignIn from '../views/SignInView.vue'
 import SignUp from '../views/SignUpView.vue'
@@ -124,7 +126,27 @@ const router = createRouter({
       path:'/user/forgot',
       name:'forgot',
       component: Forgot
-    }
+    },
+    {
+      path:'/profile',
+      name:'/profile',
+      component: ProfileView
+    },
+    {
+      path:'/profileChangepasssword',
+      name:'/profileChangepasssword',
+      component:ProfileChangepasswordView,
+    },
+    {
+      path:'/profileEdit',
+      name:'/profileEdit',
+      component:ProfileEditView,
+    },
+    {
+      path:'/Favourite',
+      name:'/Favourite',
+      component:FavouriteView,
+    },
   ]
 })
 
