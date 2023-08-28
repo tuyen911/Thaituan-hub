@@ -18,69 +18,69 @@
                 <div class="box-content" id="pav-categorymenu">
                   <ul class="level1 pav-category box-category list">
                     <li>
-                      <a href="/tin-tuc-nc2987.html">TIN TỨC</a>
+                      <router-link to="">TIN TỨC</router-link>
                       <span class="head"><a style="float: right" href="#">+</a></span>
                       <ul class="level2 box-category list" >
                         <li>
-                          <a href="/tin-khuyen-mai-nc3024.html">
+                          <router-link to="/promotionnews">
                             <i class="fa fa-angle-right"></i>
                             Tin khuyến mãi
-                          </a>
+                          </router-link>
                         </li>
                         <li>
-                          <a href="/tin-rc-trong-nuoc-nc3025.html">
+                          <router-link to="/domesticnews">
                             <i class="fa fa-angle-right"></i>
                             Tin RC trong nước
-                          </a>
+                          </router-link>
                         </li>
                         <li>
-                          <a href="/tin-rc-quoc-te-nc3026.html">
+                          <router-link to="/internationalnews">
                             <i class="fa fa-angle-right"></i>
                             Tin RC quốc tế
-                          </a>
+                          </router-link>
                         </li>
                         <li>
-                          <a href="/huong-dan-cho-nguoi-moi-choi-nc3027.html">
+                          <router-link to="/guide">
                             <i class="fa fa-angle-right"></i>
                             Hướng dẫn cho người mới chơi
-                          </a>
+                          </router-link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="/lien-he-nc3018.html">LIÊN HỆ</a>
+                      <router-link to="">LIÊN HỆ</router-link>
                       <span class="head"><a style="float: right" href="#">+</a></span>
                       <ul
                         class="level2 box-category list">
                         <li>
-                          <a href="/gioi-thieu-nc3019.html">
+                          <router-link to="/introduce">
                             <i class="fa fa-angle-right"></i>
                             Giới thiệu
-                          </a>
+                          </router-link>
                         </li>
                         <li>
-                          <a href="/lien-he-cua-hang-nc3020.html">
+                          <router-link to="/contactstore">
                             <i class="fa fa-angle-right"></i>
                             Liên hệ cửa hàng
-                          </a>
+                          </router-link>
                         </li>
                         <li>
-                          <a href="/tai-khoan-ngan-hang-nc3021.html">
+                          <router-link to="/accountbank">
                             <i class="fa fa-angle-right"></i>
                             Tài khoản ngân hàng
-                          </a>
+                          </router-link>
                         </li>
                         <li>
-                          <a href="/huong-dan-mua-hang-nc3022.html">
+                          <router-link to="/buyingguide">
                             <i class="fa fa-angle-right"></i>
                             Hướng dẫn mua hàng
-                          </a>
+                          </router-link>
                         </li>
                         <li>
-                          <a href="/chinh-sach-ban-hang-nc3023.html">
+                          <router-link to="/bankpolicy">
                             <i class="fa fa-angle-right"></i>
                             Chính sách bán hàng
-                          </a>
+                          </router-link>
                         </li>
                       </ul>
                     </li>
@@ -94,26 +94,22 @@
                 <div class="box-content">
                   <div class="pavblog-comments clearfix">
                     <div class="item-news clearfix">
-                      <a
-                        href="/chinh-sach-danh-cho-dai-ly-n12932.html"
-                        title="Chính sách dành cho đại lý"
-                      >
+                      <router-link to="/returnpolicy" title="Quy định đổi trả hàng">
                         <img
                           data-sizes="auto"
                           class="lazyautosizes ls-is-cached lazyloaded"
-                          data-src="https://pos.nvncdn.net/585eb4-8380/art/20151024_BLbKFImt1EDH71mo4gWn893M.jpg"
-                          alt="Chính sách dành cho đại lý"
+                          data-src="https://pos.nvncdn.net/585eb4-8380/art/20151024_N8LvdpE6nNNOxbtzAzj0a1wN.jpg"
+                          alt="Quy định đổi trả hàng"
                           sizes="242px"
-                          src="https://pos.nvncdn.net/585eb4-8380/art/20151024_BLbKFImt1EDH71mo4gWn893M.jpg"
-                      /></a>
-                      <div class="news-title">Chính sách dành cho đại lý</div>
+                          src="https://pos.nvncdn.net/585eb4-8380/art/20151024_N8LvdpE6nNNOxbtzAzj0a1wN.jpg"
+                      /></router-link>
+                      <div class="news-title">Quy định đổi trả hàng</div>
                       <span class="news-more">
-                        <a href="/chinh-sach-danh-cho-dai-ly-n12932.html"> Xem chi tiết </a>
+                        <router-link to="/returnpolicy"> Xem chi tiết </router-link>
                       </span>
                     </div>
                     <div class="item-news clearfix">
-                      <a
-                        href="/chinh-sach-the-khach-hang-n12931.html"
+                      <router-link to="/cuspolicy"
                         title="Chính sách thẻ khách hàng"
                       >
                         <img
@@ -123,29 +119,14 @@
                           alt="Chính sách thẻ khách hàng"
                           sizes="242px"
                           src="https://pos.nvncdn.net/585eb4-8380/art/20151024_8qA4txq4m8M9XJJYa99kztVV.jpg"
-                      /></a>
+                      /></router-link>
                       <div class="news-title">Chính sách thẻ khách hàng</div>
                       <span class="news-more">
-                        <a href="/chinh-sach-the-khach-hang-n12931.html"> Xem chi tiết </a>
+                        <router-link to="/cuspolicy"> Xem chi tiết </router-link>
                       </span>
                     </div>
                     <div class="item-news clearfix">
-                      <a href="/quy-dinh-doi-tra-hang-n12930.html" title="Quy định đổi trả hàng">
-                        <img
-                          data-sizes="auto"
-                          class="lazyautosizes ls-is-cached lazyloaded"
-                          data-src="https://pos.nvncdn.net/585eb4-8380/art/20151024_N8LvdpE6nNNOxbtzAzj0a1wN.jpg"
-                          alt="Quy định đổi trả hàng"
-                          sizes="242px"
-                          src="https://pos.nvncdn.net/585eb4-8380/art/20151024_N8LvdpE6nNNOxbtzAzj0a1wN.jpg"
-                      /></a>
-                      <div class="news-title">Quy định đổi trả hàng</div>
-                      <span class="news-more">
-                        <a href="/quy-dinh-doi-tra-hang-n12930.html"> Xem chi tiết </a>
-                      </span>
-                    </div>
-                    <div class="item-news clearfix">
-                      <a href="/quy-dinh-bao-hanh-n12929.html" title="Quy định bảo hành">
+                      <router-link to="/warrantypolicy" title="Quy định bảo hành">
                         <img
                           data-sizes="auto"
                           class="lazyautosizes ls-is-cached lazyloaded"
@@ -153,15 +134,14 @@
                           alt="Quy định bảo hành"
                           sizes="242px"
                           src="https://pos.nvncdn.net/585eb4-8380/art/20151024_tBn0dWGzT7DoMuRh1TDUAzJJ.jpg"
-                      /></a>
+                      /></router-link>
                       <div class="news-title">Quy định bảo hành</div>
                       <span class="news-more">
-                        <a href="/quy-dinh-bao-hanh-n12929.html"> Xem chi tiết </a>
+                        <router-link to="/warrantypolicy"> Xem chi tiết </router-link>
                       </span>
                     </div>
                     <div class="item-news clearfix">
-                      <a
-                        href="/chinh-sach-ban-hang-online-n12928.html"
+                      <router-link to="/salespolicy"
                         title="Chính sách bán hàng online"
                       >
                         <img
@@ -170,10 +150,10 @@
                           data-src=""
                           alt="Chính sách bán hàng online"
                           sizes="178px"
-                      /></a>
+                      /></router-link>
                       <div class="news-title">Chính sách bán hàng online</div>
                       <span class="news-more">
-                        <a href="/chinh-sach-ban-hang-online-n12928.html"> Xem chi tiết </a>
+                        <router-link to="/salespolicy"> Xem chi tiết </router-link>
                       </span>
                     </div>
                   </div>

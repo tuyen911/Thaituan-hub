@@ -1,9 +1,7 @@
 <template>
     <div class="Container">
-        <div v-if="this.object" class="Data">
-            <div>
-                
-            </div>
+        <div v-if="this.object">
+            
         </div>
         <div v-else class="noneData">
             <h1 class="title">Đơn hàng " {{ this.Code }} " không được tìm thấy</h1>
@@ -20,11 +18,11 @@
             <div class="follow">
                 <div class="input">
                     Mã đơn hàng
-                    <input placeholder="VD: 12321" v-model="code" v-on:keyup.enter="send()">
+                    <input placeholder="VD: 12321" v-model="code">
                 </div>
                 <div class="input">
                     Email đặt hàng
-                    <input placeholder="VD: tranvana@gmail.com" v-model="email" v-on:keyup.enter="send()">
+                    <input placeholder="VD: tranvana@gmail.com" v-model="email">
                 </div>
                 <div  class="buttonAlign">
                     <button class="button" @click="send()">
@@ -62,7 +60,8 @@ export default {
         }
         else {
             this.object.bill.status = "chưa giao"
-        } 
+        }
+        this.object = undefined   
     },
     methods: {
         send() {

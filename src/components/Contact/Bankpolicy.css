@@ -74,3 +74,6 @@ a.button {
     grid-template-columns: 300px auto;
     column-gap: 40px;
 }
+.news-more a{
+    color:#58b0da;
+}

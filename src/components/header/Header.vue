@@ -3,8 +3,8 @@
     <div class="Head">
       <div class="TopHead">
         <div class="AlignSign">
-          <div class="Log"><Key class="Key"></Key> <RouterLink class="link" to="/user/signin">Đăng nhập</RouterLink></div>
-          <div class="Sign"><User class="User"></User> <RouterLink class="link" to="/user/signup">Đăng ký</RouterLink></div>
+          <div class="Log"><Key class="Key"></Key> Đăng nhập</div>
+          <div class="Sign"><User class="User"></User> Đăng ký</div>
         </div>
         <div class="Input">
           <input placeholder="Tìm kiếm" type="text" />
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="UnderHead">
-        <div class="Follow" v-on:keyup.enter="send()">
+        <div class="Follow">
           <Point class="Point"></Point>
           Theo dõi đơn hàng
           <Triangle class="Triangle"></Triangle>

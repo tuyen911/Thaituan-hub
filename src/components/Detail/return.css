@@ -1,0 +1,62 @@
+#content {
+    min-height: 400px;
+    margin-bottom: 25px;
+}
+h1 {
+    font-size: 26px;
+    line-height: 38.4px;
+}
+.new_info li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.arrow li{
+    list-style-type: square;
+    margin: 0px;
+    padding: 0px 0px 0px 30px;
+    border: 0px none;
+    vertical-align: baseline;
+}
+
+.fas {
+    font-family: "Font Awesome 6 Free";
+}
+.fa-eye:before {
+    content: "\f06e";
+    margin-right: 6px;
+}
+.fa-clock-four:before, .fa-clock:before {
+    content: "\f017";
+    margin-right: 6px;
+}
+p {
+    margin: 15px 0 9px;
+    line-height:20px;
+}
+h3 span{
+    color:red;
+}
+.nb{
+    color: rgb(0,0,0);
+    font-size: 12px;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    vertical-align: baseline;
+    font-family: Tahoma, Arial;
+}
+.arrow{
+    padding-right: 0px;
+    padding-left: 50px;
+    color: rgb(0,0,0);
+    font-size: 12px;
+    line-height: normal;
+    margin: 0px;
+    border: 0px none;
+    vertical-align: baseline;
+    font-family: Tahoma, Arial;
+}
+.red{
+    color:red;
+}

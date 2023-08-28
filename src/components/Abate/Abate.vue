@@ -4,8 +4,10 @@
     <div class="row">
       <div id="breadcrumb">
         <ol class="breadcrumb">
-          <li><a href="/">Trang chủ</a></li>/
-          <li><a rel="nofollow" href="/cart">Giỏ hàng</a></li>/
+          <li><a href="/">Trang chủ</a></li>
+          /
+          <li><a rel="nofollow" href="/cart">Giỏ hàng</a></li>
+          /
           <li><a href="">Thanh toán</a></li>
         </ol>
       </div>
@@ -21,21 +23,21 @@
                   </h2>
                 </div>
                 <div class="checkout-content" style="display: block">
-                    <div class="check">
+                  <div class="check">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div id="c">
+                      <div id="c">
                         <div
-                            class="form-validation-field-0formError parentFormformCheckOut formError"
-                            style="
+                          class="form-validation-field-0formError parentFormformCheckOut formError"
+                          style="
                             opacity: 0.87;
                             position: absolute;
                             top: 8px;
                             left: 504.4px;
                             margin-top: -51px;
-                            "
+                          "
                         >
-                            <div class="formErrorContent">* Trường này bắt buộc<br /></div>
-                            <div class="formErrorArrow">
+                          <div class="formErrorContent">* Trường này bắt buộc<br /></div>
+                          <div class="formErrorArrow">
                             <div class="line10"><!-- --></div>
                             <div class="line9"><!-- --></div>
                             <div class="line8"><!-- --></div>
@@ -46,46 +48,46 @@
                             <div class="line3"><!-- --></div>
                             <div class="line2"><!-- --></div>
                             <div class="line1"><!-- --></div>
-                            </div>
+                          </div>
                         </div>
                         <input
-                            type="text"
-                            name="customerName"
-                            class="validate[required]"
-                            value=""
-                            placeholder="Họ và tên"
-                            id="form-validation-field-0"
+                          type="text"
+                          name="customerName"
+                          class="validate[required]"
+                          value=""
+                          placeholder="Họ và tên"
+                          id="form-validation-field-0"
                         />
-                        </div>
-                        <div id="c">
+                      </div>
+                      <div id="c">
                         <input
-                            type="text"
-                            name="customerMobile"
-                            class="validate[required]"
-                            value=""
-                            placeholder="Điện thoại"
+                          type="text"
+                          name="customerMobile"
+                          class="validate[required]"
+                          value=""
+                          placeholder="Điện thoại"
                         />
-                        </div>
-                        <div id="c">
+                      </div>
+                      <div id="c">
                         <input
-                            type="text"
-                            name="customerEmail"
-                            class=""
-                            value=""
-                            placeholder="Email"
+                          type="text"
+                          name="customerEmail"
+                          class=""
+                          value=""
+                          placeholder="Email"
                         />
-                        </div>
+                      </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div id="c">
+                      <div id="c">
                         <select id="cityId" name="customerCityId" class="validate[required]">
-                            <option value="">Thành phố</option>
-                            <option value="254">Hà Nội</option>
-                            <option value="255">Hồ Chí Minh</option>
-                            <option value="256">An Giang</option>
-                            <option value="257">Bà Rịa - Vũng Tàu</option>
-                            <option value="258">Bắc Ninh</option>
-                            <!-- <option value="259">Bắc Giang</option>
+                          <option value="">Thành phố</option>
+                          <option value="254">Hà Nội</option>
+                          <option value="255">Hồ Chí Minh</option>
+                          <option value="256">An Giang</option>
+                          <option value="257">Bà Rịa - Vũng Tàu</option>
+                          <option value="258">Bắc Ninh</option>
+                          <!-- <option value="259">Bắc Giang</option>
                             <option value="260">Bình Dương</option>
                             <option value="261">Bình Định</option>
                             <option value="262">Bình Phước</option>
@@ -144,20 +146,24 @@
                             <option value="315">Bạc Liêu</option>
                             <option value="316">Điện Biên</option> -->
                         </select>
-                        </div>
-                        <div id="c">
-                        <select id="districtId" name="customerDistrictId" class="validate[required]">
-                            <option value="">Quận Huyện</option>
+                      </div>
+                      <div id="c">
+                        <select
+                          id="districtId"
+                          name="customerDistrictId"
+                          class="validate[required]"
+                        >
+                          <option value="">Quận Huyện</option>
                         </select>
-                        </div>
-                        <div id="c">
+                      </div>
+                      <div id="c">
                         <select id="wardId" name="customerWardId" class="validate[required]">
-                            <option value="">Phường/xã</option>
+                          <option value="">Phường/xã</option>
                         </select>
                         <input type="hidden" name="selectIdWard" />
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="clear: both">
                     <div id="c">
                       <input
@@ -224,18 +230,78 @@
                   </div>
                 </div>
               </div>
+              <div id="payment-address">
+                <div class="checkout-heading">
+                  <h2 style="padding: 0; margin: 0; line-height: inherit; font-size: 14px">
+                    Thông tin đơn hàng
+                  </h2>
+                </div>
+                <div class="part3">
+                  <div class="Img">
+                    <div class="Title">Ảnh</div>
+                    <div v-for="(part, index) in this.Object" :key="index" class="imgAlign">
+                      <img class="img" :src="`${part.url}`" alt="error" />
+                    </div>
+                  </div>
+                  <div class="Name">
+                    <div class="Title">Tên sản phẩm</div>
+                    <div v-for="(part, index) in this.Object" :key="index" class="nameAlign">
+                      {{ part.name }}
+                    </div>
+                  </div>
+                  <div class="Quantity">
+                    <div class="Title">Số lượng</div>
+                    <div v-for="(part, index) in this.Object" :key="index" class="quantityAlign">
+                      <input
+                        class="input"
+                        :value="`${this.Quantity[index]}`"
+                        @keydown.enter="set(index)"
+                        @blur="set(index)"
+                      />
+                      <Garbage class="Garbage" @click="openDelete(index)"></Garbage>
+                    </div>
+                  </div>
+                  <div class="Price">
+                    <div class="Title">Đơn giá</div>
+                    <div v-for="(part, index) in this.Object" :key="index" class="priceAlign">
+                      {{ part.price }} VNĐ
+                    </div>
+                  </div>
+                  <div class="Sum">
+                    <div class="Title">Thành tiền</div>
+                    <div v-for="(part, index) in this.Object" :key="index" class="sumAlign">
+                      {{ calculation(part.price, this.Quantity[index]) }} VNĐ
+                    </div>
+                  </div>
+                  <div class="Special" v-if="this.Object === 0">
+                    Giỏ hàng của bạn hiện chưa có sản phẩm nào !
+                  </div>
+                </div>
+                <div class="part4">
+                  <div class="RouteAlign">
+                    <RouterLink class="Link" to="/"> TIẾP TỤC MUA HÀNG </RouterLink>
+                    <RouterLink class="Link" to="/abate"> THANH TOÁN </RouterLink>
+                  </div>
+                  <div class="Total">{{ Sum() }} VNĐ</div>
+                </div>
+              </div>
             </div>
           </div>
         </form>
       </section>
     </div>
   </div>
-  <Footer/>
+  <Footer />
 </template>
 
 <script setup>
 import Header from '../header/Header.vue'
 import Footer from '../footer/Footer.vue'
+
+// const dataLocal = (localStorage.getItem('cart'))
+const dataLocal = JSON.parse(`[${localStorage.getItem('cart')}]`)
+
+console.log('cart', dataLocal)
 </script>
 
 <style src="./abate.css">
