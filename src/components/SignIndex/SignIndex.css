@@ -1,8 +1,8 @@
 .all{
-    width: 20vw;
-    height: 180px;
+    width: 15vw;
+    height: 390px;
     border: 1px solid rgb(186, 186, 186);
-    min-width: 220px;
+    min-width: 400px;
 }
 
 .Title{
@@ -64,6 +64,74 @@
     animation: changeColor 0.5s ease;
 }
 
+.four{
+    display: flex;
+    width: auto;
+    padding: 15px;  
+}
+
+.four > .link{
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.four >.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+}
+
+
+.five{
+    display: flex;
+    width: auto;
+    padding: 15px;  
+}
+
+.five > .link{
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.five >.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+}
+
+.six{
+    display: flex;
+    width: auto;
+    padding: 15px;  
+}
+
+.six > .link{
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.six >.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+}
+
+.seven{
+    display: flex;
+    width: auto;
+    padding: 15px;  
+}
+
+.seven > .link{
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.seven >.link:hover{
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+}
 @keyframes changeColor {
     0%{
         color: black;
