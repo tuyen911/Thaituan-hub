@@ -13,6 +13,29 @@
                 Lấy lại mật khẩu
             </RouterLink>
         </div>
+        <div class="four">
+            <RouterLink to="/profile" class="link">
+                Quản lý cá nhân
+            </RouterLink>
+        </div>
+
+        <div class="five">
+            <RouterLink to="/profileChangepasssword" class="link">
+                Đổi mật khẩu
+            </RouterLink>
+        </div>
+
+        <div class="six">
+            <RouterLink to="/profileEdit" class="link">
+                Sửa thông tin tài khoản cá nhân
+            </RouterLink>
+        </div>
+
+        <div class="seven">
+            <RouterLink to="/Favourite" class="link">
+                Danh sách sản phẩm yêu thích
+            </RouterLink>
+        </div>
     </div>
 </template>
 
