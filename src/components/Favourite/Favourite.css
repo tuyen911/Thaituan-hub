@@ -1,0 +1,162 @@
+#content {
+    min-height: 400px;
+    margin-bottom: 25px;
+    width: 850px;
+  }
+
+  .wishlist-info {
+    margin: 20px auto;
+}
+
+.wishlist-info table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+table {
+    display: table;
+    max-width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    border-color: gray;
+
+}
+tr {
+    display: table-row;
+}
+.wishlist-info td {
+    padding: 7px;
+}
+
+.wishlist-info thead td {
+    color: #4D4D4D;
+    font-weight: bold;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+
+}
+
+.wishlist-info td {
+    padding: 7px;
+}
+
+.wishlist-info tbody td {
+    vertical-align: middle ;
+    border-bottom: 1px solid #ddd;
+}
+
+.far{
+    display: inline-block;
+    font-size: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+.Container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .path {
+    display: flex;
+    width: 75vw;
+    padding: 10px;
+    min-width: 1100px;
+  }
+  
+  .path > .link {
+    font-weight: 300;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .path > .link:last-child {
+    color: #31beff;
+  }
+  
+  .path > .link:hover {
+    color: #31beff;
+    animation: changeColor 0.5s ease;
+  }
+  
+  @keyframes changeColor {
+    0% {
+      color: black;
+    }
+    100% {
+      color: #31beff;
+    }
+  }
+  
+  .link {
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .link:visited {
+    color: black;
+  }
+  
+  .Information {
+    width: 75vw;
+    height: auto;
+    min-width: 1100px;
+    display: flex;
+  }
+  
+  .Data {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+  }
+  
+  .Data > h1 {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  
+  .Data > input {
+    padding: 6px;
+    width: 240px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(133, 133, 133);
+  }
+  
+  .Data > button {
+    width: 240px;
+    height: 40px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .Data > button:hover {
+    background-color: #31beff;
+    animation: changeBack 0.5s ease;
+  }
+  
